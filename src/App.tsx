@@ -1,10 +1,16 @@
-import { CircularProgress } from "@material-ui/core";
+import React from "react";
+import { Route, Switch } from "react-router-dom";
+import { MainPage, Layout, DoctorsPage } from "./pages";
 
-const App = () => {
+const App: React.FC = () => {
     return (
-        <div className="App">
-            <CircularProgress color="primary" thickness={2} />
-        </div>
+        <Layout>
+            <Switch>
+                <Route exact path={"/"} render={() => <h1>Home</h1>} />
+                <Route exact path={"/main"} render={() => <MainPage />} />
+                <Route exact path={"/doctors"} render={() => <DoctorsPage />} />
+            </Switch>
+        </Layout>
     );
 };
 
