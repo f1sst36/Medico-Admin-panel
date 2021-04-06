@@ -9,16 +9,16 @@ export const Statistics: React.FC = () => {
             <Typography variant="h4">Пользователи</Typography>
             <Grid container>
                 <Grid md={3} item>
-                    <StatisticsBlock count={123} label={"sdgsgs"} />
+                    <StatisticsBlock count={123} label={"Data"} />
                 </Grid>
                 <Grid md={3} item>
-                    <StatisticsBlock count={123} label={"sdgsgs"} />
+                    <StatisticsBlock count={123} label={"Data"} />
                 </Grid>
                 <Grid md={3} item>
-                    <StatisticsBlock count={123} label={"sdgsgs"} />
+                    <StatisticsBlock count={123} label={"Data"} />
                 </Grid>
                 <Grid md={3} item>
-                    <StatisticsBlock count={123} label={"sdgsgs"} />
+                    <StatisticsBlock count={123} label={"Data"} />
                 </Grid>
             </Grid>
         </div>

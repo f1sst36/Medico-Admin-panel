@@ -53,6 +53,26 @@ export const Navigation: React.FC = () => {
                             Финансы
                         </NavLink>
                     </li>
+                    <li>
+                        <a className="navigation__item link" href="/api-docs" target="_blank">
+                            Swagger
+                        </a>
+                    </li>
+                    <li>
+                        <a className="navigation__item link" href="/seeder/run" target="_blank">
+                            Start seeding
+                        </a>
+                    </li>
+                    <li>
+                        <a
+                            className="navigation__item link"
+                            href="https://eager-murdock-5c26ab.netlify.app"
+                            rel="noreferrer"
+                            target="_blank"
+                        >
+                            Front App
+                        </a>
+                    </li>
                 </ul>
             </nav>
         </aside>

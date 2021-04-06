@@ -6,8 +6,7 @@ const App: React.FC = () => {
     return (
         <Layout>
             <Switch>
-                <Route exact path={"/"} render={() => <h1>Home</h1>} />
-                <Route exact path={"/main"} render={() => <MainPage />} />
+                <Route exact path={["/", "/main"]} render={() => <MainPage />} />
                 <Route exact path={"/doctors"} render={() => <DoctorsPage />} />
             </Switch>
         </Layout>
