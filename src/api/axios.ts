@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const prefix = "/api/v1";
-const baseURL = process.env.BACKEND_URL || "localhost:8080";
+const baseURL = process.env.BACKEND_URL || "http://localhost:8080";
 
 const _axiosInstance = axios.create({
     baseURL: baseURL + prefix,
