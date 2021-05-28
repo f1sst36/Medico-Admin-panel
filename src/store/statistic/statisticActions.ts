@@ -1,5 +1,5 @@
 import { Dispatch } from 'redux';
-import { axiosInstance } from '../../api/axios';
+// import { axiosInstance } from '../../api/axios';
 import { statisticAPIResponseSuccess } from '../../types/responses';
 import { StatisticAction, statisticTypes } from './statisticTypes';
 
