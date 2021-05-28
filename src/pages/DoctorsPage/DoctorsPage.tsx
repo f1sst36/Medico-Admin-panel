@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
-import { axiosInstance } from "../api/axios";
-import { UnverifiedDoctorsList } from "../components/DoctorsPage/UnverifiedDoctorsList/UnverifiedDoctorsList";
+import { axiosInstance } from "../../api/axios";
+import { UnverifiedDoctorsList } from "./components";
 
 export const DoctorsPage: React.FC = () => {
     const [doctors, setDoctors] = useState([]);

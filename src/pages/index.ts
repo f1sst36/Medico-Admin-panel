@@ -1,3 +1,3 @@
 export * from "./Layout";
-export * from "./MainPage";
-export * from "./DoctorsPage";
+export * from "./MainPage/MainPage";
+export * from "./DoctorsPage/DoctorsPage";

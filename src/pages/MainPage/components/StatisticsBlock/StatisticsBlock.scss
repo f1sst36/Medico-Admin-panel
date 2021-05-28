@@ -1,4 +1,4 @@
-@import "../../../styles/variables";
+@import '../../../../styles/variables';
 
 .statistics-block {
     background-color: #fff;
@@ -7,5 +7,5 @@
     border: 1px solid $light-grey;
 
     padding: 16px 24px;
-    margin: 0 24px;
+    // margin-left: 12px;
 }

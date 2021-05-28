@@ -1,20 +1,8 @@
 import { StatisticAction, StatisticState, statisticTypes } from './statisticTypes';
 
 const initialState: StatisticState = {
-    users: {
-        registered: 0,
-        patients: 0,
-        doctors: 0,
-        records: 0,
-    },
-    // Записи на консультации (кол-во)
-    consultations: {
-        all: 0,
-        done: 0,
-        waiting: 0,
-        cancel: 0,
-    },
-    isEmptyLists: true,
+    users: null,
+    consultations: null,
     pending: false,
     error: null,
 };
@@ -24,9 +12,16 @@ export const statisticReducer = (state = initialState, action: StatisticAction):
         case statisticTypes.FETCH_STATISTICS:
             return { ...state, pending: true };
         case statisticTypes.FETCH_STATISTICS_SUCCESS:
-            return { ...state, pending: false, isEmptyLists: false };
+            return {
+                ...state,
+                users: action.payload.data.users,
+                consultations: action.payload.data.consultations,
+                pending: false,
+            };
         case statisticTypes.FETCH_STATISTICS_ERROR:
             return { ...state, pending: false, error: action.payload };
+        case statisticTypes.CLEAR_STATISTICS_STATE:
+            return initialState;
 
         default:
             return state;

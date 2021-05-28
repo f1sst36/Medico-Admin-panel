@@ -1,6 +1,7 @@
-@import "../../../styles/variables";
+@import '../../../styles/variables';
 
 .navigation {
+    min-width: 260px;
     border-right: 1px solid $light-grey;
 
     &__item {
