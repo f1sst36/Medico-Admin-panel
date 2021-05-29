@@ -7,7 +7,6 @@ import { StatisticsSkeleton } from './StatisticsSkeleton';
 
 export const Statistics: React.FC = () => {
     const { pending, error, users, consultations } = useTypedSelector((store) => store.statistic);
-    console.log('render');
 
     if (error) return <>{error}</>;
 

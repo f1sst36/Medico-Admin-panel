@@ -1,18 +1,18 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
+import React from 'react';
+import { NavLink } from 'react-router-dom';
 
-import "./Navigation.scss";
+import './Navigation.scss';
 
 export const Navigation: React.FC = () => {
     return (
-        <aside>
+        <aside className="navigation-wrapper">
             <nav className="navigation">
                 <ul>
                     <li>
                         <NavLink
                             className="navigation__item link"
                             activeClassName="active"
-                            to={"/main"}
+                            to={'/main'}
                         >
                             Главная
                         </NavLink>
@@ -21,7 +21,7 @@ export const Navigation: React.FC = () => {
                         <NavLink
                             className="navigation__item link"
                             activeClassName="active"
-                            to={"/schedule"}
+                            to={'/schedule'}
                         >
                             Расписание
                         </NavLink>
@@ -30,7 +30,7 @@ export const Navigation: React.FC = () => {
                         <NavLink
                             className="navigation__item link"
                             activeClassName="active"
-                            to={"/doctors"}
+                            to={'/doctors'}
                         >
                             Врачи
                         </NavLink>
@@ -39,7 +39,7 @@ export const Navigation: React.FC = () => {
                         <NavLink
                             className="navigation__item link"
                             activeClassName="active"
-                            to={"/patients"}
+                            to={'/patients'}
                         >
                             Пациенты
                         </NavLink>
@@ -48,7 +48,7 @@ export const Navigation: React.FC = () => {
                         <NavLink
                             className="navigation__item link"
                             activeClassName="active"
-                            to={"/finance"}
+                            to={'/finance'}
                         >
                             Финансы
                         </NavLink>
@@ -66,7 +66,7 @@ export const Navigation: React.FC = () => {
                     <li>
                         <a
                             className="navigation__item link"
-                            href="https://eager-murdock-5c26ab.netlify.app"
+                            href={`${process.env.REACT_APP_FRONTEND_URL}`}
                             rel="noreferrer"
                             target="_blank"
                         >
