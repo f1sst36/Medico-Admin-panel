@@ -13,7 +13,7 @@ export const Statistics: React.FC = () => {
     return (
         <div className="statistics">
             <div className="statistics__users">
-                <Typography variant="h4">Пользователи</Typography>
+                <Typography variant="body2">Пользователи</Typography>
                 <Grid className="statistics__list" spacing={3} justify="space-between" container>
                     {!users || !consultations || pending ? (
                         <StatisticsSkeleton />
@@ -37,7 +37,7 @@ export const Statistics: React.FC = () => {
             </div>
 
             <div className="statistics__consultations">
-                <Typography variant="h4">Консультации</Typography>
+                <Typography variant="body2">Консультации</Typography>
                 <Grid className="statistics__list" spacing={3} justify="space-between" container>
                     {!users || !consultations || pending ? (
                         <StatisticsSkeleton />

@@ -10,7 +10,7 @@ export const StatisticsSkeleton = () => {
                     variant="rect"
                     animation="wave"
                     width={'100%'}
-                    height={138}
+                    height={118}
                 />
             </Grid>
             <Grid xs={12} md={3} item>
@@ -19,7 +19,7 @@ export const StatisticsSkeleton = () => {
                     variant="rect"
                     animation="wave"
                     width={'100%'}
-                    height={138}
+                    height={118}
                 />
             </Grid>
             <Grid xs={12} md={3} item>
@@ -28,7 +28,7 @@ export const StatisticsSkeleton = () => {
                     variant="rect"
                     animation="wave"
                     width={'100%'}
-                    height={138}
+                    height={118}
                 />
             </Grid>
             <Grid xs={12} md={3} item>
@@ -37,7 +37,7 @@ export const StatisticsSkeleton = () => {
                     variant="rect"
                     animation="wave"
                     width={'100%'}
-                    height={138}
+                    height={118}
                 />
             </Grid>
         </>
