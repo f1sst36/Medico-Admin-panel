@@ -1,0 +1,42 @@
+@import '../../../../styles/variables';
+
+.auth-form {
+    max-width: 500px;
+    margin: auto;
+    border: 1px solid $grey;
+    border-radius: 4px;
+    box-shadow: $shadow;
+    background-color: #fff;
+
+    &__header {
+        &__label {
+            box-sizing: border-box;
+            padding: 30px 0px;
+            text-align: center;
+            max-width: 50%;
+            background-color: $blue;
+            height: 100%;
+            border-bottom-right-radius: 16px;
+
+            @media (max-width: $sm) {
+                padding: 16px 0px;
+            }
+        }
+    }
+
+    &__body {
+        padding: 36px;
+
+        &__text-field {
+            margin-bottom: 12px;
+        }
+
+        &__button {
+            margin-top: 12px !important;
+        }
+
+        @media (max-width: $sm) {
+            padding: 28px 12px;
+        }
+    }
+}

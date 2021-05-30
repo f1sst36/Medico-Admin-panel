@@ -1,0 +1,25 @@
+@import '../../../styles/variables';
+
+.text-field {
+    &__input {
+        box-sizing: border-box;
+        font-family: 'Rubik', sans-serif;
+        font-size: 16px;
+        padding: 12px 16px;
+        border-radius: 8px;
+        border: 1px solid $grey;
+
+        &_full-width {
+            width: 100%;
+        }
+
+        &::placeholder {
+            color: $grey;
+        }
+
+        &:focus {
+            border-color: $blue;
+            outline: none;
+        }
+    }
+}
